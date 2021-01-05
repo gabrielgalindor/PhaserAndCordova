@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #gameDiv{
+            display: none;
+        }
+        #videocont{
+            position: fixed;
+            top: 0px;
+            width: 570px;
+            height: 320px;
+            z-index: 100;
+        }
+    </style>
+    <title>First Game</title>
+</head>
+<body>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="node_modules/phaser/dist/phaser.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <!--
+        <video id="videocont" src="assets/intro.mp4" autoplay width="640" height="480"></video>
+    -->
+    <img id="videocont" src="assets/intro.gif">
+    
+    <div id="gameDiv"></div>
+</body>
+</html>
